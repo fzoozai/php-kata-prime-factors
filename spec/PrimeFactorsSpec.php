@@ -17,6 +17,10 @@ class PrimeFactorsSpec extends ObjectBehavior
         $this->generate(8)->shouldReturn([2, 2, 2]);
     }
 
+    function it_returns_3_3_for_9() {
+        $this->generate(9)->shouldReturn([3, 3]);
+    }
+
     function it_returns_2_2_5_5_for_100(){
         $this->generate(100)->shouldReturn([2, 2, 5, 5]);
     }
